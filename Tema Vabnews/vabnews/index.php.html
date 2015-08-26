@@ -1,0 +1,138 @@
+<?php get_header(); ?>
+
+
+
+<div id="conteudo-dois">		   
+<div id="destaques">
+<div id="destaques-esquerdo">
+<div id="box-de">
+        <?php query_posts('showposts=1&cat=-33,-34,-3');?>
+        <?php if (have_posts()): while (have_posts()) : the_post();?>
+       <small>
+       <?php the_time('j M Y');?> | <?php if(function_exists('the_views')){the_views();}?> | <?php comments_popup_link('0 comentário','1 comentário','Comentários');?>
+       </small>
+       <img class="img-border" src="<?php echo get_option('home');?>/<?php $key="feature";echo get_post_meta($post->ID,$key,true);?>" title="<?php the_title();?>" alt="<?php the_title();?>" width="296px" height="179px">
+      <h1>
+      <a href="<?php the_Permalink()?>" title="<?php the_title();?>" alt="<?php the_title();?>"><?php the_title();?></a>
+      </h1>
+	<p>
+              <?php the_excerpt_rereloaded(20);?>
+              </p>
+	<?php endwhile; else:?>
+	<?php endif;?>
+	
+       <ul>
+	<?php query_posts('showposts=3&offset=8');?>
+
+
+
+	<?php if (have_posts()): while (have_posts()) : the_post();?>
+        <li>
+         <a href="<?php the_Permalink()?>" title="<?php the_title();?>" alt="<?php the_title();?>"><?php the_title();?>
+         </a>
+        </li>
+           <?php endwhile; else:?>
+           <?php endif;?>
+        <ul>
+ <div>
+			   </div>
+			      <div id="destaques-direito">
+				  <?php query_posts('showposts=4&offset=4');?>
+				  <?php if (have_posts()): while (have_posts()) : the_post();?>
+				     <div id="box-dd">
+					    <img src="<?php echo get_option('home');?>/<?php $key="feature";echo get_post_meta($post->ID,$key,true);?>" title="<?php the_title();?>" alt="<?php the_title();?>" width="115px" height="71px">
+						   <h1><a href="<?php the_Permalink()?>" title="<?php the_title();?>" alt="<?php the_title();?>"><?php the_title();?></a></h1>
+						      <p><?php the_excerpt_rereloaded(30);?></p>
+						
+					 </div>
+				     <?php endwhile; else:?>
+			         <?php endif;?>
+					 
+				  </div>
+			  
+			</div>
+			
+			<div id="destaques-meio">
+			   <div id="destaques-meio-e">
+			      <?php query_posts('showposts=1&cat=33');?>
+				     <?php if (have_posts()): while (have_posts()) : the_post();?>
+					 <img src="<?php echo get_option('home');?>/<?php $key="feature";echo get_post_meta($post->ID,$key,true);?>" width="226px" height="138px" alt="<?php the_title();?>" title="<?php the_title();?>">
+				        <?php endwhile; else:?>
+			               <?php endif;?>					 
+					 
+			   </div>
+			      <div id="destaques-meio-m">
+			      <?php query_posts('showposts=1&cat=34');?>
+				     <?php if (have_posts()): while (have_posts()) : the_post();?>
+					 <?php $key="video";echo get_post_meta($post->ID,$key,true);?>
+				        <?php endwhile; else:?>
+			               <?php endif;?>
+				  </div>
+				     <div id="destaques-meio-d">
+				<?php query_posts('showposts=1&cat=3');?>
+				  <?php if (have_posts()): while (have_posts()) : the_post();?>
+					 <h1><img src="<?=bloginfo('template_url')?>/images/tecnologia-titulo.gif"></h1>
+<small><?php the_time('j M Y');?> | <?php if(function_exists('the_views')){the_views();}?> | <?php comments_popup_link('0 comentário','1 comentário','Comentários');?></small>					    
+						<img class="img-border" src="<?php echo get_option('home');?>/<?php $key="feature";echo get_post_meta($post->ID,$key,true);?>" title="<?php the_title();?>" alt="<?php the_title();?>" width="226px" height="136px">
+					       <h2><a href="<?php the_Permalink()?>" title="<?php the_title();?>" alt="<?php the_title();?>"><?php the_title();?></a></h2>
+						       
+					 			     <?php endwhile; else:?>
+			                            <?php endif;?>
+					 </div>		
+			
+			</div>
+
+
+
+
+
+   <div id="destaques-dois">
+      <div id="esporte">
+     <div id="esporte-box">
+	<?php query_posts('showposts=1&cat=4&offset=5');?>
+	  <?php if (have_posts()): while (have_posts()) : the_post();?>
+	 <h1><img src="<?=bloginfo('template_url')?>/images/esporte-titulo.gif"></h1>
+    <img class="img-border" src="<?php echo get_option('home');?>/<?php $key="feature";echo get_post_meta($post->ID,$key,true);?>" title="<?php the_title();?>" alt="<?php the_title();?>" width="296px" height="179px">
+       <h2><a href="<?php the_Permalink()?>" title="<?php the_title();?>" alt="<?php the_title();?>"><?php the_title();?></a></h2>
+	       <p><?php the_excerpt_rereloaded(25);?></p>
+
+      <small><?php the_time('j M Y');?> | <?php if(function_exists('the_views')){the_views();}?> | <?php comments_popup_link('0 comentário','1 comentário','Comentários');?></small>
+     <?php endwhile; else:?>
+              <?php endif;?>
+ </div>
+  </div>
+     <div id="moda">
+					    <div id="moda-box">
+				<?php query_posts('showposts=1&cat=5&orderby=rand');?>
+				  <?php if (have_posts()): while (have_posts()) : the_post();?>
+					 <h1><img src="<?=bloginfo('template_url')?>/images/moda.gif"></h1>
+					    <img class="img-border" src="<?php echo get_option('home');?>/<?php $key="feature";echo get_post_meta($post->ID,$key,true);?>" title="<?php the_title();?>" alt="<?php the_title();?>" width="296px" height="179px">
+					       <h2><a href="<?php the_Permalink()?>" title="<?php the_title();?>" alt="<?php the_title();?>"><?php the_title();?></a></h2>
+						       <p><?php the_excerpt_rereloaded(25);?></p>
+							      <small><?php the_time('j M Y');?> | <?php if(function_exists('the_views')){the_views();}?> | <?php comments_popup_link('0 comentário','1 comentário','Comentários');?></small>
+					 			     <?php endwhile; else:?>
+			                            <?php endif;?>
+						</div>
+					 
+					 </div>
+
+
+
+
+  <div id="barra-lateral">
+   <div id="barra-lateral-box">
+      <h1><img src="<?=bloginfo('template_url')?>/images/sidebar-titulo.gif"></h1>
+     <ul>
+    <li><?php get_most_viewed();?></li>						
+ </ul>
+ 
+ <h1><img src="<?=bloginfo('template_url')?>/images/tags-titulo.gif"></h1>
+ <?php wp_tag_cloud('smallest=7&largest=18&number=10&orderby=count');?>
+       </div>
+    </div>
+   </div>
+    <div id="divclear"> </div>
+ </div>
+
+</div>
+<?php get_footer(); ?>

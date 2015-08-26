@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0
+Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<link href="style.css" type="text/css" rel="stylesheet">
+<head>
+<title>VAB News - Sua nova fonte de notícias na web</title>
+</head>
+<body>
+<div id="conteudo">
+   <div id="topo">
+      <div id="logo">
+	     <h1><img src="images/logo.gif"></h1>
+	  </div>
+	     <div id="busca">
+		 Busca
+		 </div>
+   
+   </div>
+      <div id="menu">
+       <ul>
+	      <li><a href="#">Home</a></li>
+	      <li><a href="#">Sobre nós</a></li>
+	      <li><a href="#">Esportes</a></li>
+	      <li><a href="#">Moda</a></li>
+	      <li><a href="#">Diversos</a></li>
+	      <li><a href="#">Redação</a></li>
+	      <li><a href="#">Fale conosco</a></li>
+	   </ul>
+	  </div>
+         <div id="conteudo-pagina">	
+		    <div id="conteudo-pagina-esquerdo">
+               <div id="categorias">
+			   <img src="images/img3.gif">
+			   <small>2 Abr de 2009 | 125 visitas | <a href="#">50 Comentários</a></small>
+			   <h1>Microsoft deve lançar versão online do Office hoje</h1>
+			   <p>A Microsoft deve aproveitar a conferência com empresas parceiras da próxima segunda-feira para apresentar novidades no pacote de produtividade Office. Excel, Word e companhia devem ganhar suas versões para web, além de um pré-lançamento em beta do pacote 2010. O encontro anual de parceiros se realiza em Nova Orleans, nos Estados Unidos.</p>
+		   
+			   </div>
+
+			   </div>
+			      <div id="conteudo-pagina-direito">
+				     <h1>Publicidade</h1>
+					 <p>Banners aqui</p>
+					 <h1>Enquete</h1>
+					 <p>Enquetes aqui</p>
+				  </div>
+		 
+		 
+		    <div id="divclear"> </div>
+		 </div>
+
+</div>
+   <div id="rodape">
+   Copyright 2009 - VAB News - Todos os direitos reservados
+   
+   </div>
+
+</body>
+</html>

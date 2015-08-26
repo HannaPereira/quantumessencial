@@ -1,0 +1,109 @@
+=== Plugin Name ===
+Contributors: Bernardo Bauer
+Donate link: http://www.bernabauer.com/wp-hotwords/
+Tags: integration, hotwords, monetiza&ccedil;&atilde;o, Brasil
+Requires at least: 2.5
+Tested up to: 2.5
+Stable tag: 4.0.1
+
+WP-HOTWords foi desenvolvido para poupar o blogueiro do trabalho de incluir as TAGs do HOTWords manualmente, sem falar na personaliza&ccedil;&atilde;o.
+
+== Description ==
+
+Desde que eu entrei no programa de monetiza&ccedil;&atilde;o HOTWords venho pensando em uma maneira de criar um plugin para incluir os c&oacute;digos necess&aacute;rios para que o blog esteja habilitado a exibir os an&uacute;ncios.
+
+Naturalmente a falta de tempo e a esperan&ccedil;a de que algu&eacute;m fosse faz&ecirc;-lo antes de mim me impediram de criar o plugin. Neste final de semana prolongado devido ao feriado de 23 de Abril resolvi me dedicar a criar o plugin.
+
+O funcionamento dele &eacute; bastante simples. Ele inclui os divs antes e depois do texto dos artigos e/ou dos coment&aacute;rios. A inclus&atilde;o do c&oacute;digo no rodap&eacute; do blog tamb&eacute;m &eacute; feita pelo plugin. A &uacute;nica configura&ccedil;&atilde;o necess&aacute;ria a ser feita &eacute; informar o n&uacute;mero de afiliado do programa na p&aacute;gina de administra&ccedil;&atilde;o que &eacute; disponibilizada ao se habilitar o plugin. 
+
+Uma funcionlidade que foi inclu&iacute;da por sugest&atilde;o do [Alexandre Rauta](http://www.blogadao.com/) que usa oo plugin foi a de escolher determinados artigos para que n&atilde;o sejam mostrados an&uacute;ncios do HOTWords.
+
+O plugin inclui ainda cr&eacute;ditos para o HOTWords e para mim, o autor do plugin. Acabei incluindo a nota de rodap&eacute; ap&oacute;s ler o artigo onde fica claro que ningu&eacute;m prestigia o autor de plugins. A inspira&ccedil;&atilde;o foi o [artigo do Matt](http://photomatt.net/2007/04/12/plugin-authors-get-no-love/ "Authors Get No Love"). Junto com a publica&ccedil;&atilde;o desta nota de rodap&eacute; &eacute; publicado tamb&eacute;m a parte mais importante do c&oacute;digo do hotwords. &eacute; o c&oacute;digo onde est&aacute; o c&oacute;digo de afiliado.
+
+O WP-HOTWords foi testado apenas no Wordpress 2.3 e infelizmente n&atilde;o posso dar suporte ao plugin. A falta de tempo me impede de ajudar da maneira que se faz necess&aacute;rio. O espa&ccedil;o para coment&aacute;rios por&eacute;m est&aacute; aberto para que voc&ecirc; troque experi&ecirc;ncias com outros usu&aacute;rios do plugin. Sempre que poss&iacute;vel tentarei responder d&uacute;vidas utilizando este espa&ccedil;o.
+
+Se voc&ecirc; tiver problemas com o plugin ou quer sugerir alguma modifica&ccedil;&atilde;o, por favor acesse a p&aacute;gina do [plugin](http://www.bernabauer.com/wp-hotwords/) e deixe um coment&aacute;rio.
+
+== Installation ==
+
+A instala&ccedil;&atilde;o do plugin &eacute; bastante simples.
+
+1. Fa&ccedil;a upload da pasta **wp-hotwords** para a pasta **/wp-content/plugins/**
+2. **Ative** o WP-HOTWords no menu **Plugins** do Wordpress
+3. **Informe o seu c&oacute;digo de afiliado** e personalize a exibi&ccedil;&atilde;o dos an&uacute;ncios
+
+**Importante!**
+
+Para que o plugin funcione corretamente, &eacute; **necess&aacute;rio** que o seu tema tenha uma chamada para fun&ccedil;&atilde;o **wp_footer()**. Se voc&ecirc; n&atilde;o sabe como incluir a chamada, veja [aqui](http://www.wpdesigner.com/2007/05/30/where-exactly-should-you-place-wp_footer/ aqui). &eacute; necess&aacute;rio tamb&eacute;m que voc&ecirc; tenha uma conta ativa no [HOTWords](http://www.HOTWords.com.br/ "HOTWords").
+
+== Frequently Asked Questions ==
+   FAQ - Perguntas Frequentes 
+
+ = N&atilde;o aparecem an&uacute;ncios nos meus artigos. Verifiquei o c&oacute;digo da p&aacute;gina do artigo e os c&oacute;digos do HOTwords n&atilde;o est&atilde;o sendo inclu&iacute;dos. O que eu fa&ccedil;o? = 
+
+ O problema pode estar no tema do seu blog, garanta que existe a chamada "wp_footer()" no arquivo de tema "Rodap&eacute;" (ou footer, caso seu wordpress esteja em ingl&ecirc;s) do seu tema ativo. Veja mais [aqui](http://www.wpdesigner.com/2007/05/30/where-exactly-should-you-place-wp_footer/ aqui)
+ 
+ = Preciso me cadastrar em algum lugar para usar este plugin? = 
+ 
+ Sim! &eacute; necess&aacute;rio ter uma conta ativa no sistema [HOTWords](http://www.HOTWords.com.br/ "HOTWords") para que o plugin funcione como esperado.
+ 
+ = Posso determinar que n&atilde;o sejam mostrados an&uacute;ncios do HOTwords em alguns artigos? = 
+ 
+ Se voc&ecirc; quiser que algum artigo n&atilde;o receba an&uacute;ncios do HOTwords, basta escolher a op&ccedil;&atilde;o **N&atilde;o mostrar an&uacute;ncios do HOTWords neste artigo** na p&aacute;gina de edi&ccedil;&atilde;o de artigos.
+
+== Hist&oacute;rico ==
+
+Vers&atilde;o 4.0 - 2008-03-30:
+
+* Melhoria: Código totalmente reformulado.
+* Inclusão: Possibilidade de envio por email dos ganhos (experimental)
+* Melhoria: Plugin compatível com nova identidade visual da versão 2.5 do Wordpress.
+
+Vers&atilde;o 3.0 - 2007-11-04:
+
+* Melhoria: Op&ccedil;&atilde;o de exclus&atilde;o do c&oacute;digo HOTWords por an&uacute;ncio passa a estar na barra lateral da p&aacute;gina de edi&ccedil;&atilde;o de artigos.
+* Inclus&atilde;o: Agora &eacute; poss&iacute;vel escolher a cor para cada artigo.
+* Corre&ccedil;&atilde;o: Funcionalidade para escolher cor so funcionava quando o blog estava na raiz do dom&iacute;nio. 
+* Inclus&atilde;o: &eacute; poss&iacute;vel escolher se an&uacute;ncios ser&atilde;o mostrados em p&aacute;ginas com mais de um artigo.
+* Melhoria: FAQ recebeu novas perguntas e respostas.
+* Melhoria: Otimiza&ccedil;&atilde;o do plugin para minimizar as chamadas a banco de dados.
+
+Vers&atilde;o 2.3 - 2007-10-27:
+
+* Melhoria: Inclu&iacute;do "No Follow" para os links inclu&iacute;dos no rodap&eacute;.
+* Melhoria: Inclu&iacute;da a vers&atilde;o do plugin na nota de rodap&eacute;.
+* Melhoria: Ajustes no c&oacute;digo do HOTWords para valida&ccedil;&atilde;o com XHTML.
+* Melhoria: Ajustes no c&oacute;digo fonte do plugin para acabar com tags HTML fora do padr&atilde;o XHTML.
+
+Vers&atilde;o 2.2 -2007-09-29:
+
+* Inclu&iacute;do: Lista de exclus&atilde;o de artigos para que n&atilde;o recebam an&uacute;ncios do hotwords.
+* Corre&ccedil;&atilde;o: O trigger para a ativa&ccedil;&atilde;o do plugin estava apontando para o antigo local do plugin.
+* Inclu&iacute;do: Op&ccedil;&atilde;o de Debug.
+
+Vers&atilde;o 2.1 - 2007-05-20:
+
+* Atualiza&ccedil;&atilde;o: O DIV a ser inclu&iacute;do no texto foi alterado. Antes era &lt div id=hotwordstxt name=hotworestxt &gt agora n&atilde;o tem mais a tag “name”.
+
+Vers&atilde;o 2.0 - 2007-04-29:
+
+* Melhoria: Personalizacao do link de anuncio, agora com javascript para selecionar uma quantidade maior de cores ou digita&ccedil;&atilde;o direta do c&oacute;digo.
+* Incluido: Escolha do local onde aparecem os c&oacute;digos do HOTWords: Coment&aacute;rios e Artigos.
+***IMPORTANTE****
+** Para atualizar para esta vers&atilde;o voc&ecirc; precisa desativar a vers&atilde;o anterior. Este plugin agora &eacute; formado por 4 arquivos que devem ficar no diret&oacute;rio /wp-plugins/wp-hotwords. O arquivo ZIP j&aacute; vem com a estrutura de diret&oacute;rio criada.
+** Caso a sele&ccedil;&atilde;o de cores atrav&eacute;s da nova ferramenta em javascript n&atilde;o funcione, certifique-se de que os arquivos js_color_picker_v2.js, js_color_picker_v2.css, color_functions.js e wp-hotwords.php est&atilde;o dentro da pasta /wp-plugins/wp-hotwords. NOTA: a sele&ccedil;&atilde;o de cores atrav&eacute;s da op&ccedil;&atilde;o slider n&atilde;o funciona. N&atilde;o sei porque.
+** Ao ativar a nova vers&atilde;o certifique-se de configurar o plugin corretamente, pois a sele&ccedil;&atilde;o de cor &eacute; armazenada de maneira diferente e existem novas op&ccedil;&otilde;es que interferem na maneira que os an&uacute;ncios s&atilde;o inseridos.
+
+Vers&atilde;o 1.2 - 2007-04-24:
+
+* Inclu&iacute;do: Personaliza&ccedil;&atilde;o dos links do HOTWords atrav&eacute;s de cores pr&eacute;-determinadas.
+
+Vers&atilde;o 1.1 - 2007-04-23:
+
+* Inclu&iacute;do: Personaliza&ccedil;&atilde;o da nota de rodap&eacute; atrav&eacute;s de CSS.
+* Inclu&iacute;do: Aviso visual de que a configura&ccedil;&atilde;o n&atilde;o est&aacute; completa.
+* Melhoria: Limpeza do c&oacute;digo e inclus&atilde;o de coment&aacute;rios nas fun&ccedil;&otilde;es.
+
+Vers&atilde;o 1.0 - 2007-04-22:
+
+* Primeira vers&atilde;o com funcionalidades b&aacute;sicas.
