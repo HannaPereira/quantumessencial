@@ -129,3 +129,6 @@ if ( !defined('WP_PLUGIN_DIR') && is_link(ABSPATH . '/wp-content/plugins') )
 
 // sets up WordPress vars and included files
 require_once(ABSPATH . 'wp-settings.php');
+
+// Multisite * /
+define ('WP_ALLOW_MULTISITE', true);
